@@ -316,7 +316,7 @@
                     </button>
                     <span class="page-number">1</span>
                     <button>
-                        <span>Next</span>
+                        <span>Selanjutnya</span>
                         <i class="bx bxs-right-arrow-circle"></i>
                     </button>
                 </div>
@@ -496,38 +496,52 @@
 
 
     <script>
-        const form = document.querySelector('.wish-form form');
-        const ul = document.querySelector('.wish-comment-list ul');
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector('.wish-form form');
+  const wishList = document.querySelector('.wish-comment-list ul');
 
-        function buatKomentar(nama, pesan) {
-            const li = document.createElement('li');
-
-            li.innerHTML = `
-    <div class="avatar">${nama[0].toUpperCase()}</div>
-    <div class="content">
-      <h4>${nama}</h4>
-      <p>${pesan}</p>
-    </div>
-  `;
-
-            ul.prepend(li);
-        }
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const nama = form.name.value.trim();
-            const pesan = form.message.value.trim();
-
-            if (!nama || !pesan) {
-                alert('Harap lengkapi semua bidang!');
-                return;
-            }
-
-            buatKomentar(nama, pesan);
-            form.reset();
+  function loadWishes() {
+    fetch('ambil_wish.php')
+      .then(response => response.json())
+      .then(data => {
+        wishList.innerHTML = '';
+        data.forEach(wish => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <div class="avatar">${wish.name[0].toUpperCase()}</div>
+            <div class="content">
+                <h4>${wish.name}</h4>
+                <p>${wish.message}</p>
+            </div>
+          `;
+          wishList.appendChild(li);
         });
-    </script>
+      });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch('simpan_wish.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.text())
+    .then(response => {
+      if (response.includes("Sukses")) {
+        form.reset();
+        loadWishes();
+      } else {
+        alert("Gagal menyimpan ucapan");
+      }
+    });
+  });
+
+  loadWishes(); // Load ucapan saat halaman dimuat
+});
+</script>
+
 
     <script>
         function salinRekening(id) {
