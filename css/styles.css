@@ -16,23 +16,31 @@
   }
 }
 
-     .row {
-         display: flex;
-         flex-wrap: wrap; /* Membuat item dalam baris membungkus */
-     }
-     .col {
-         flex: 1 0 100%; /* Setiap kolom mengambil 100% lebar pada perangkat kecil */
-     }
-     @media (min-width: 768px) {
-         .col {
-             flex: 1 0 50%; /* Setiap kolom mengambil 50% lebar pada perangkat lebih besar */
-         }
-     }
-          img {
-         max-width: 100%; /* Gambar tidak akan melebihi lebar kontainer */
-         height: auto; /* Tinggi gambar akan disesuaikan secara proporsional */
-     }
-     
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* Membuat item dalam baris membungkus */
+}
+
+.col {
+  flex: 1 0 100%;
+  /* Setiap kolom mengambil 100% lebar pada perangkat kecil */
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex: 1 0 50%;
+    /* Setiap kolom mengambil 50% lebar pada perangkat lebih besar */
+  }
+}
+
+img {
+  max-width: 100%;
+  /* Gambar tidak akan melebihi lebar kontainer */
+  height: auto;
+  /* Tinggi gambar akan disesuaikan secara proporsional */
+}
+
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -13927,8 +13935,7 @@ fieldset:disabled .btn {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, #dc354580 30%,
-      rgba(220, 53, 69, 0.4) 45%, #fff 100%), url("../assets/img/pink.png");
+  background: url("../assets/img/img1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -13995,8 +14002,8 @@ fieldset:disabled .btn {
 }
 
 .active-work {
-  color: #f87171;
-  border-bottom: 2px solid #f87171;
+  color: #e2e3e5;
+  border-bottom: 2px solid #e2e3e5;
 }
 
 .work__container {
@@ -14042,6 +14049,381 @@ fieldset:disabled .btn {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .masthead {
+    position: relative;
+    background: url("../assets/img/img1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+
+  .masthead>* {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.modal-body {
+  background: url("../assets/img/bg-prewed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* supaya fullscreen modal-body */
+}
+
+.modal-body h1,
+.modal-body .h1 {
+
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.modal-body h2,
+.modal-body .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal-body {
+    position: relative;
+    background: url("../assets/img/img3.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .modal-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+
+  .modal-body>* {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%),
+    url("../assets/img/bg-ilus.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-header {
+  color: rgba(0, 0, 0, 0.68);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.bride {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 10rem 8rem;
+  position: relative;
+}
+
+.bride h2 {
+  font-size: 1.6rem;
+  font-family: var(--arabic);
+  font-weight: 400;
+}
+
+.bride h3 {
+  font-size: var(--fontSize-heading-base);
+  font-family: var(--sacramento);
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.bride .bride_couple,
+.bride .bride_couple ul,
+.bride .bride_couple li,
+.bride .bride_couple li figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bride .bride_couple {
+  margin-top: 4rem;
+}
+
+.bride .bride_couple ul {
+  gap: 1rem;
+}
+
+.bride .bride_couple li figure img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+}
+
+.bride .bride_couple li figure figcaption {
+  font-size: var(--fontSize-heading-base);
+  margin: 1rem 0;
+  font-family: var(--sacramento);
+}
+
+.bride .bride_couple span {
+  font-size: 3.4rem;
+  font-family: var(--sacramento);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.bride i,
+.hadist i,
+.time a+p+i,
+.galeri>i {
+  font-size: 3rem;
+  color: #908d8d;
+  position: absolute;
+  z-index: 10;
+  animation: upAndDown 3s infinite;
+}
+
+.bride i:nth-of-type(1) {
+  top: 14rem;
+  right: 8rem;
+}
+
+.bride i:nth-of-type(2) {
+  left: 8rem;
+  top: 24rem;
+}
+
+.bride i:nth-of-type(3) {
+  top: 54rem;
+  right: 8rem;
+}
+
+.bride i:nth-of-type(4) {
+  top: 60rem;
+  left: 8rem;
+}
+
+.bride i:nth-of-type(5) {
+  right: 8rem;
+  bottom: 6rem;
+}
+
+.hadist {
+  width: 100%;
+  padding: 4rem 8rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.hadist h2 {
+  font-size: var(--fontSize-heading-base);
+  font-family: var(--sacramento);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hadist p span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.hadist i {
+  top: 16rem;
+  left: 8rem;
+}
+
+.hadist svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+.hadist svg:nth-of-type(1) {
+  top: -8rem;
+}
+
+.hadist svg:nth-of-type(2) {
+  bottom: -15rem;
+}
+
+/* Awalnya elemen disembunyikan */
+.hidden {
+  opacity: 0;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.audio-icon-wrapper {
+  /* Wrapper stay static */
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: black;
+  opacity: 1;
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+.audio-icon-wrapper .bi-disc {
+  animation: rotating 4s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bingkai-frame {
+  width: 260px;
+  height: 360px;
+  background: linear-gradient(to top, #b9e2fa, #91cc77); /* latar bingkai */
+  border: 5px solid #000;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bunga-dekor {
+  position: absolute;
+  bottom: 150px; /* Naikkan dari 100px */
+  width: 130px;
+  z-index: 2;
+}
+
+.bunga-dekor.kiri {
+  left: calc(50% - 180px);
+  bottom: 160px; /* Kiri sedikit lebih tinggi */
+}
+
+.bunga-dekor.kanan {
+  right: calc(50% - 180px);
+  bottom: 150px;
+}
 
 
-/*# sourceMappingURL=bootstrap.css.map */
+.tanaman-bawah {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  z-index: 3;
+}
+.judul-nama-pengantin {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 1.1;
+  margin: 0;
+  color: #5b472e;
+  bottom: 0;
+}
