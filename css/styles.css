@@ -14190,14 +14190,31 @@ fieldset:disabled .btn {
   font-weight: 600;
   font-style: normal;
 }
+.font-nama-tamu {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 36px;         /* Perbesar ukuran font */
+    color: #FFC107; 
+}
 
 .playfair-display-uniquifier {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 700;
   font-style: normal;
 }
-
+.suranna-regular {
+  font-family: "Suranna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .font-header {
   color: rgba(0, 0, 0, 0.68);
   font-weight: 500;
