@@ -14184,6 +14184,13 @@ fieldset:disabled .btn {
   font-weight: weight;
   font-style: normal;
 }
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 .font-header {
   color: rgba(0, 0, 0, 0.68);
