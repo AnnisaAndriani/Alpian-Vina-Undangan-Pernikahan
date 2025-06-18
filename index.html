@@ -7,11 +7,15 @@
     <meta name="description" content="" />
     <meta name="authgit restore .or" content="" />
 
-    <title>Alpian&Vina - Undangan Pernikahan</title>
+    <title>The Wedding Day of Alpian &amp; Vina - Undangan Digital</title>
     <link rel="icon" type="image/x-icon" href="assets/logohitam.ico" />
 
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +36,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="window.scrollTo(0, 0)">
     <!-- pembukaan -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -48,7 +52,7 @@
                             </h1>
                             <small class="mt-3">Minggu, 12 Oktober 2025</small>
                             <hr class="border-secondary w-50 mx-auto" />
-                            <p class="mb-3">Kepada Bapak/Ibu/Saudara/i</p>
+                            <p id="tamu">Kepada Yth.</p>
 
                             <button type="button" class="btn bg-berem btn-secondary text-white rounded-4"
                                 data-bs-dismiss="modal" onclick="playAudio()">
@@ -71,7 +75,7 @@
     <!--  -->
 
     <!-- header -->
-    <section id="hero"
+    <section id="hero" 
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <div class="container my-2">
             <div class="d-flex align-items-center p-5 rounded-5 shadow-sm"
@@ -110,27 +114,27 @@
         </div>
     </section>
 
-    <section class="projects-section pt-5"
+    <section class="projects-section pt-5" 
         style="background: linear-gradient(to bottom, rgba(255,255,255,0.9), #f8f9fa);">
         <div class="container text-center">
             <!-- Ayat Pembuka -->
-            <h2 class="display-6 fw-semibold mb-2" style="color: #3c2f2f; font-family: 'DM Serif Display', serif;">
+            <h2 class="display-6 fw-semibold mb-2" data-aos="zoom-in" data-aos-duration="1000" style="color: #3c2f2f; font-family: 'DM Serif Display', serif;">
                 بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
             </h2>
 
             <!-- Salam -->
-            <p class="mt-3 fs-5" style="color: #5b472e; font-family: 'DM Serif Text', serif;">
+            <p class="mt-3 fs-5" data-aos="zoom-in" data-aos-duration="1000" style="color: #5b472e; font-family: 'DM Serif Text', serif;" >
                 Assalamualaikum Warahmatullahi Wabarakatuh
             </p>
 
             <!-- Undangan Teks -->
-            <p class="fs-6 mx-auto" style="max-width: 1000px; color: #333; font-family: 'DM Serif Text', serif;">
+            <p class="fs-6 mx-auto" data-aos="zoom-in" data-aos-duration="1000" style="max-width: 1000px; color: #333; font-family: 'DM Serif Text', serif;">
                 Dengan memohon Rahmat & Ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri
                 acara pernikahan kami:
             </p>
 
             <!-- Container untuk foto & dekorasi -->
-            <div class="container text-center position-relative" style="height: 500px;">
+            <div class="container text-center position-relative" style="height: 500px;"data-aos="zoom-in" data-aos-duration="1000">
                 <!-- Foto Pasangan -->
                 <div class="my-4">
                     <img src="assets/img/pegantin-pria.jpg" alt="Foto Pengantin" class="img-fluid shadow" style="
@@ -163,11 +167,11 @@
                 <img src="assets/img/tanaman-bawah.png" alt="Tanaman Bawah" class="tanaman-bawah">
             </div>
             <!-- Simbol & di tengah -->
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="1000">
                 <h1 class="judul-nama-pengantin fade-in-text" style="margin: 0 20px;">&</h1>
             </div>
             <!-- Container untuk foto & dekorasi -->
-            <div class="container text-center position-relative" style="height: 500px;">
+            <div class="container text-center position-relative" style="height: 500px;" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- Foto Pasangan -->
                 <div class="my-4">
                     <img src="assets/img/pegantin-wanita.jpg" alt="Foto Pengantin" class="img-fluid shadow" style="
@@ -200,16 +204,16 @@
                 <img src="assets/img/tanaman-bawah.png" alt="Tanaman Bawah" class="tanaman-bawah">
             </div><br>
 
-            <p class="font-header eb-garamond-uniquifier" style="font-size: 36px !important;">
-                Save The Date
-            </p>
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#BF9264"
-                class="bi bi-envelope-heart-fill" viewBox="0 0 16 16">
+                class="bi bi-envelope-heart-fill" data-aos="zoom-in" data-aos-duration="1000" viewBox="0 0 16 16">
                 <path
                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555l-4.2 2.568a2.785 2.785 0 0 0-.051-.105c-.666-1.3-2.363-1.917-3.699-1.25-1.336-.667-3.033-.05-3.699 1.25l-.05.105L.05 3.555ZM11.584 8.91a4.694 4.694 0 0 1-.073.139L16 11.8V4.697l-4.003 2.447c.027.562-.107 1.163-.413 1.767Zm-4.135 3.05c-1.048-.693-1.84-1.39-2.398-2.082L.19 12.856A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144L10.95 9.878c-.559.692-1.35 1.389-2.398 2.081L8 12.324l-.551-.365ZM4.416 8.91c-.306-.603-.44-1.204-.413-1.766L0 4.697v7.104l4.49-2.752a4.742 4.742 0 0 1-.074-.138Z" />
                 <path d="M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
             </svg>
-            <div class="invitation-container">
+            <p class="font-header eb-garamond-uniquifier" style="font-size: 36px !important;" data-aos="zoom-in" data-aos-duration="1000">
+                Save The Date
+            </p>
+            <div class="invitation-container" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="left-date">
                     <h4>MINGGU</h4>
                     <h1>12</h1>
@@ -228,7 +232,7 @@
                 </div>
             </div>
             <!-- Bagian Bawah: Maps -->
-            <div class="map-box">
+            <div class="map-box" data-aos="zoom-in" data-aos-duration="1000">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.37775251757!2d104.80948357359667!3d-2.992488896983538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b77d9b54b7a91%3A0xbcccb8a47d7e9ea6!2sSMP%20Negeri%2056%20Palembang!5e0!3m2!1sid!2sid!4v1750157243667!5m2!1sid!2sid"
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -236,13 +240,13 @@
             </div>
         </div>
     </section>
-   <section class="rekening-section py-5 text-center" id="rekening" style="background: #f8f9fa;">
+    <section class="rekening-section py-5 text-center" id="rekening" style="background: #f8f9fa;">
         <div class="container">
-            <h1 class="judul-nama-pengantin fade-in-text text-center">
+            <h1 class="judul-nama-pengantin fade-in-text text-center" data-aos="zoom-in" data-aos-duration="1000">
                 Love Gift
             </h1>
-            <p>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami, dapat melalui :</p>
-            <div class="row justify-content-center g-4">
+            <p data-aos="zoom-in" data-aos-duration="1000">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Bagi anda yang ingin memberikan tanda kasih untuk kami, dapat melalui :</p>
+            <div class="row justify-content-center g-4" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- BANK BCA -->
                 <div class="col-md-5">
                     <div class="card h-100 border-0 rounded-5 shadow-sm">
@@ -252,13 +256,13 @@
                             <strong class="fs-5" id="rekeningBCA">1234567890</strong>
                             <p class="mb-2">a.n. Vina Sugandi</p>
                             <button class="btn btn-outline-secondary btn-sm"
-                                onclick="salinRekening('rekeningBCA')">Salin</button>
+                                onclick="salinRekening('rekeningBCA')">Salin No.Rek</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- BANK MANDIRI -->
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card h-100 border-0 rounded-5 shadow-sm">
                         <div class="card-body">
                             <img src="assets/img/bank.svg" alt="Logo Bank Mandiri" class="mb-3" style="height: 40px;">
@@ -266,7 +270,7 @@
                             <strong class="fs-5" id="rekeningMandiri">9876543210</strong>
                             <p class="mb-2">a.n. Alpian Sugandi</p>
                             <button class="btn btn-outline-secondary btn-sm"
-                                onclick="salinRekening('rekeningMandiri')">Salin</button>
+                                onclick="salinRekening('rekeningMandiri')">Salin No.Rek</button>
                         </div>
                     </div>
                 </div>
@@ -276,7 +280,7 @@
 
 
 
-<section class="wishas" id="wishas" style="
+    <section class="wishas" id="wishas" style="
   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('assets/img/bg-ds.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,7 +291,7 @@
         <div class="container my-2">
             <div class="wish-form-container d-flex align-items-center p-5 rounded-5 shadow-sm"
                 style="background-color: rgba(255, 255, 255, 0.85);">
-                <div class="wish-form" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="wish-form">
                     <h1 class="judul-nama-pengantin fade-in-text text-center">
                         Do'a dan Ucapan
                     </h1>
@@ -305,7 +309,7 @@
                 </div>
             </div>
 
-            <div class="wish-comment-list" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="wish-comment-list">
                 <hr />
                 <ul aria-label="list komentar"></ul>
                 <hr style="margin-top: 1rem" />
@@ -323,24 +327,24 @@
             </div>
         </div>
         <div class="py-5">
-        <!-- Undangan Teks -->
-            <p class="fs-6 mx-auto" style="max-width: 1000px; color: #333; font-family: 'DM Serif Text', serif;">
+            <!-- Undangan Teks -->
+            <p class="fs-6 mx-auto" style="max-width: 1000px; color: #333; font-family: 'DM Serif Text', serif;" data-aos="zoom-in" data-aos-duration="1000">
                 Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan
                 memberikan
                 do'a restu kepada kedua mempelai
             </p>
             <!-- Salam -->
-            <p class="mt-3 fs-5" style="color: #5b472e; font-family: 'DM Serif Text', serif;">
-                Wassalamualaikum Warahmatullahi Wabarakatuh
+            <p class="mt-3 fs-5" style="color: #5b472e; font-family: 'DM Serif Text', serif;" data-aos="zoom-in" data-aos-duration="1000">
+                KAMI YANG BERBAHAGIA
             </p>
-            </div>
+        </div>
     </section>
 
 
     <!-- Audio -->
     <div id="audio-container">
         <audio id="song" loop>
-            <source src="assets/audio/Download.mp3" type="audio/mp3">
+            <source src="assets/audio/audio.mp3" type="audio/mp3">
         </audio>
 
         <div class="audio-icon-wrapper" style="display: none;">
@@ -376,7 +380,7 @@
         }
 
         function playAudio() {
-            song.volume = 0.1;
+            song.volume = 0.8;
             audioIconWrapper.style.display = 'flex';
             song.play().catch((e) => {
                 console.log("Audio play failed:", e);
@@ -422,6 +426,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mixitup/dist/mixitup.min.js"></script>
+
 
     <script>
         let mixer = mixitup('.work__container', {
@@ -496,51 +501,51 @@
 
 
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector('.wish-form form');
-  const wishList = document.querySelector('.wish-comment-list ul');
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('.wish-form form');
+            const wishList = document.querySelector('.wish-comment-list ul');
 
-  function loadWishes() {
-    fetch('ambil_wish.php')
-      .then(response => response.json())
-      .then(data => {
-        wishList.innerHTML = '';
-        data.forEach(wish => {
-          const li = document.createElement('li');
-          li.innerHTML = `
+            function loadWishes() {
+                fetch('ambil_wish.php')
+                    .then(response => response.json())
+                    .then(data => {
+                        wishList.innerHTML = '';
+                        data.forEach(wish => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `
             <div class="avatar">${wish.name[0].toUpperCase()}</div>
             <div class="content">
                 <h4>${wish.name}</h4>
                 <p>${wish.message}</p>
             </div>
           `;
-          wishList.appendChild(li);
+                            wishList.appendChild(li);
+                        });
+                    });
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+
+                fetch('simpan_wish.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(res => res.text())
+                    .then(response => {
+                        if (response.includes("Sukses")) {
+                            form.reset();
+                            loadWishes();
+                        } else {
+                            alert("Gagal menyimpan ucapan");
+                        }
+                    });
+            });
+
+            loadWishes(); // Load ucapan saat halaman dimuat
         });
-      });
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-
-    fetch('simpan_wish.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(res => res.text())
-    .then(response => {
-      if (response.includes("Sukses")) {
-        form.reset();
-        loadWishes();
-      } else {
-        alert("Gagal menyimpan ucapan");
-      }
-    });
-  });
-
-  loadWishes(); // Load ucapan saat halaman dimuat
-});
-</script>
+    </script>
 
 
     <script>
@@ -558,7 +563,22 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     </script>
+ <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
 
+        const namaTamu = getQueryParam("to");
+        if (namaTamu) {
+            document.getElementById("tamu").textContent = "Kepada Yth. " + decodeURIComponent(namaTamu.replace(/\+/g, " "));
+        }
+    </script>
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
     <!-- Toast Notifikasi -->
