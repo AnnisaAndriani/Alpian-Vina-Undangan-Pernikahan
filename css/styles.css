@@ -14711,3 +14711,9 @@ fieldset:disabled .btn {
   border: 0;
   border-radius: 8px;
 }
+zoom-in {
+      margin: 20px 0;
+      font-size: 2rem;
+      color: #5d3a00;
+    }
+    
