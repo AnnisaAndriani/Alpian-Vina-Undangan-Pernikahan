@@ -14191,6 +14191,12 @@ fieldset:disabled .btn {
   font-style: normal;
 }
 
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 .font-header {
   color: rgba(0, 0, 0, 0.68);
