@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+    background-color: #f8f9fa;
     /* Ukuran font lebih kecil untuk perangkat mobile */
   }
 
@@ -243,7 +244,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #f8f9fa;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -14172,18 +14173,6 @@ fieldset:disabled .btn {
   color: white;
 }
 
-.dm-serif-text-regular {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.eb-garamond-uniquifier {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
 .dancing-script-uniquifier {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -14191,30 +14180,169 @@ fieldset:disabled .btn {
   font-style: normal;
 }
 .font-nama-tamu {
-  font-family: "Dancing Script", cursive;
+  font-family: "DM Serif Text", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-    font-size: 36px;         /* Perbesar ukuran font */
-    color: #FFC107; 
+    font-size: 28px;         /* Perbesar ukuran font */
+    color:rgb(136, 84, 7);
+}
+/*Font*/
+.gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-uniquifier {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:    "wdth" 100;
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.playfair-display-uniquifier {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-.suranna-regular {
-  font-family: "Suranna", serif;
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.passions-conflict-regular {
+  font-family: "Passions Conflict", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.prata-regular {
-  font-family: "Prata", serif;
+.corinthia-regular {
+  font-family: "Corinthia", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.pochaevsk-regular {
+  font-family: "Pochaevsk", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 .font-header {
   color: rgba(0, 0, 0, 0.68);
   font-weight: 500;
@@ -14469,8 +14597,18 @@ fieldset:disabled .btn {
   bottom: 0;
 
 }
+.judul-nama-pengantin2 {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 1.1;
+  margin: 0;
+  color: #5b472e;
+  bottom: 0;
 
-
+}
 
 :root {
   --bg-color: #f8f9fa;
@@ -14671,7 +14809,10 @@ fieldset:disabled .btn {
   max-width: 700px;
   margin: 40px auto;
   padding: 20px;
-  background: white;
+  background: url("../assets/img/bgbutoon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid #ccc;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -14682,6 +14823,12 @@ fieldset:disabled .btn {
   width: 100px;
   border-right: 1px solid #999;
   padding-right: 15px;
+}
+.right-date {
+  text-align: center;
+  width: 180px;
+  border-left: 1px solid #999;
+  padding-left: 15px;
 }
 
 .left-date h4 {
@@ -14714,7 +14861,7 @@ fieldset:disabled .btn {
 
 .middle-content p {
   margin: 4px 0;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -14746,4 +14893,17 @@ zoom-in {
       font-size: 2rem;
       color: #5d3a00;
     }
-    
+      .map-frame {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
