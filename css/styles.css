@@ -14923,7 +14923,7 @@ zoom-in {
 .map-frame {
   width: 100%;
   max-width: 200px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 9 / 16;
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
